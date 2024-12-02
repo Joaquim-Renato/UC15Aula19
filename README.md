@@ -8,7 +8,7 @@ Media queries são regras no CSS que permitem aplicar estilos diferentes depende
 
 ## Principais Operadores Relacionais:
 
-min-width e max-width
+`min-width` e `max-width`
 Usados para definir um intervalo de larguras da tela em que os estilos devem ser aplicados.
 
 ``````CSS
@@ -33,7 +33,7 @@ Usados para definir um intervalo de larguras da tela em que os estilos devem ser
     }
 }
 ``````
-min-height e max-height
+`min-height` e `max-height`
 Usados para definir estilos baseados na altura da tela.
 
 ``````CSS
@@ -52,7 +52,7 @@ Usados para definir estilos baseados na altura da tela.
 }
 
 ``````
-orientation
+`orientation`
 Especifica estilos com base na orientação do dispositivo (paisagem ou retrato).
 
 ``````CSS
