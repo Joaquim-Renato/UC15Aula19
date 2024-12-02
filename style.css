@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.titulo{
+    color: green;
+    font-size: 52px;
+}
+    
+.subtitulo{
+    color: blueviolet;
+}
+
+.texto{
+    color:chocolate;
+}
+
+@media screen and (max-width: 600px) {
+    
+    body {
+        background-color: silver;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .subtitulo{
+        font-size: 15px;
+    }
+    .texto{
+        font-size: 10px;
+    }
+}
