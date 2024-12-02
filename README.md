@@ -1,4 +1,4 @@
-# Responsividade:
+# WEB Responsividade:
 
 O que são Media Queries?
 
@@ -9,6 +9,43 @@ Media queries são regras no CSS que permitem aplicar estilos diferentes depende
 ----
 Uma boa estratégia/prática é criar uma arquivo `media.css` onde devemos centralizar as informações de media queries; 
 Só devemos incluir o link href no nosso html;
+## Operadores Lógicos:
+Em media queries permitem criar condições mais complexas para aplicar estilos
+
+`not`
+Inverte uma condição. Os estilos serão aplicados quando a condição não for verdadeira.
+Exemplo:
+``````CSS
+@media not (min-width: 768px) {
+    body {
+        background-color: lightblue; /* Aplica em telas menores que 768px */
+    }
+}
+``````
+`and`
+Combina múltiplas condições, todas devem ser verdadeiras para aplicar os estilos.
+Exemplo:
+``````CSS
+
+
+@media (min-width: 768px) and (orientation: landscape) {
+    body {
+        background-color: lightgreen; /* Aplica em telas acima de 768px em modo paisagem */
+    }
+}
+``````
+`only`
+
+Restringe a aplicação apenas para dispositivos que suportam as condições especificadas. Útil para evitar que navegadores mais antigos interpretem incorretamente.
+Exemplo:
+``````CSS
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: pink; /* Aplica apenas em telas menores que 480px */
+    }
+}
+``````
+----
 
 ## Principais Operadores Relacionais:
 
@@ -113,4 +150,19 @@ Define estilos com base na densidade de pixels (usado principalmente para dispos
     }
 }
 
+``````````
+
+Combinação de Operadores
+Você pode combinar vários operadores para criar condições mais específicas.
+
+Exemplo:
+
+``````````CSS
+/* Estilos para telas entre 600px e 1200px de largura em modo paisagem */
+@media (min-width: 600px) and (max-width: 1200px) and (orientation: landscape) {
+    body {
+        font-size: 20px;
+        background-color: lightsteelblue;
+    }
+}
 ``````````
