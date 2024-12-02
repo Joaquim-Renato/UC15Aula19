@@ -1,19 +1,53 @@
-*{
+
+/* Define o tamanho base para cálculo em rem */
+html {
+    font-size: 16px; /* 1rem = 16px */
+   }
+   body {
     margin: 0;
     padding: 0;
-}
-
-
-.titulo{
-    color: green;
-    font-size: 52px;
-}
-    
-.subtitulo{
-    color: blueviolet;
-}
-
-.texto{
-    color:chocolate;
-}
-
+    font-family: Arial, sans-serif;
+   }
+   /* Estilo padrão para o texto e imagens */
+   p {
+    font-size: 1rem; /* 16px */
+    color: black;
+    text-align: center;
+   }
+   img {
+    width: 100%; /* Por padrão, a imagem ocupa toda a largura do contêiner */
+    max-width: 20rem; /* Limite de largura para imagens menores */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 1rem auto;
+    display: block;
+   }
+   /* Para dispositivos com largura mínima de 768px (Tablets) */
+   @media screen and (min-width: 768px) {
+    p {
+    font-size: 1.25rem; /* Aumenta o tamanho do texto (20px) */
+    color: rgb(200, 0, 0); /* Vermelho */
+    }
+    img {
+    max-width: 25rem; /* Aumenta a largura máxima da imagem */
+    }
+   }
+   /* Para dispositivos com largura mínima de 992px (Monitores) */
+   @media screen and (min-width: 992px) {
+    p {
+    font-size: 1.5rem; /* Aumenta o tamanho do texto (24px) */
+    color: rgb(0, 200, 0); /* Verde */
+    }
+    img {
+    max-width: 30rem; /* Aumenta ainda mais a largura máxima da imagem */
+    }
+   }
+   /* Para dispositivos com largura mínima de 1200px (TVs ou telas grandes) */
+   @media screen and (min-width: 1200px) {
+    p {
+    font-size: 2rem; /* Aumenta o tamanho do texto (32px) */
+    color: rgb(0, 0, 200); /* Azul */
+    }
+    img {
+    max-width: 40rem; /* Imagens ainda maiores para telas grandes */
+    }
+   }

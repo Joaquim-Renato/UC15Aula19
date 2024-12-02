@@ -7,7 +7,7 @@ Pra que serve?
 Media queries são regras no CSS que permitem aplicar estilos diferentes dependendo de características do dispositivo em que o conteúdo está sendo visualizado, como a largura da tela, a resolução, a orientação (retrato ou paisagem), entre outras.
 
 ----
-Uma boa estratégia/prática é criar uma arquivo `media.css` onde devemos centralizar as informações de media queries; 
+Uma boa estratégia/prática é criar um arquivo `media.css` onde devemos centralizar as informações de media queries; 
 Só devemos incluir o link href no nosso html;
 ## Operadores Lógicos:
 Em media queries permitem criar condições mais complexas para aplicar estilos
@@ -166,3 +166,8 @@ Exemplo:
     }
 }
 ``````````
+### Boas refs 
+
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries
+
+https://www.devmedia.com.br/utilizando-css-media-queries/27085
